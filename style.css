@@ -1,4 +1,5 @@
-html,
+@import url("media.css");
+
 body {
 	scroll-behavior: smooth;
 	background-color: #fff;
@@ -140,16 +141,18 @@ h3 {
 .about {
 	padding-top: 150px;
 	background-image: url(img/close-up-code-coding-160107.jpg);
-
 	background-size: cover;
 
 }
 
-#welcome-section {
-	min-height: 90vh;
-	width: auto;
-	
+#welcome-section { 
+	overflow: auto;
+	height: 100vh;
+	padding:0;
+	margin:0;
 }
+
+
 
 #navbar {
 	height: 10vh;
@@ -162,6 +165,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+
 }
 
 nav a {
@@ -221,4 +225,11 @@ nav a:hover {
 	justify-content: center;
 }
 
+/*Media Queries*/
+@media(max-width:600px){
 
+	body {
+	background-color: #fff;: aquamarine;
+	}
+	
+  }
