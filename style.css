@@ -1,5 +1,4 @@
-@import url("media.css");
-
+html,
 body {
 	scroll-behavior: smooth;
 	background-color: #fff;
@@ -30,7 +29,6 @@ body {
 	background-color: #fff;
 	top: 0;
 	width: 100%;
-	z-index:1000;
 
 }
 
@@ -39,6 +37,7 @@ body {
 	background-color: #fefefe;
 	display: flex;
 	flex-direction: column;
+margin: 0 auto;
 
 }
 
@@ -90,10 +89,13 @@ h3 {
 
 /* Project */
 
-.projects-wrapper {
+.projects-wrapper{
 	display: flex;
+
 	flex-flow: column wrap;
-	height: 100%;
+	height: auto;
+	width: 100%;
+	
 }
 
 .container {
@@ -128,32 +130,41 @@ h3 {
 	text-decoration: none;
 	font-size: 16px;
 	text-align: center;
-
 	margin: 0;
 }
 
 .container ul li a img {
 	max-width: 100%;
-
+	
 }
 
 /* home */
 
 .about {
 	padding-top: 150px;
-	background-image: url(img/close-up-code-coding-160107.jpg);
-	background-size: cover;
-
+	
 }
 
-#welcome-section { 
-	overflow: auto;
+.welcome-section {
+position: relative;
+object-fit: cover;
+}
+
+.welcome-section img {
+	top: 0;
+	left:0;
+	min-width: 100%;
 	height: 100vh;
-	padding:0;
-	margin:0;
+	position: absolute;
+	
 }
 
 
+#welcome-section {
+	min-height: 90vh;
+	width: auto;
+	
+}
 
 #navbar {
 	height: 10vh;
@@ -166,7 +177,6 @@ nav {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-
 }
 
 nav a {
@@ -226,11 +236,8 @@ nav a:hover {
 	justify-content: center;
 }
 
-/*Media Queries*/
-@media(max-width:600px){
 
-	body {
-	background-color:  aquamarine;
-	}
-	
-  }
+.portfolio {
+width: 100%;
+}
+
